@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     path: ArgoCD-Setup
-    repoURL: 'https://github.com/cmays20/OpenShift-Demo-GitOps.git'
+    repoURL: 'https://github.com/cmays20/OpenShift-Redis-AI-Demo.git'
     targetRevision: HEAD
   syncPolicy:
     automated:
