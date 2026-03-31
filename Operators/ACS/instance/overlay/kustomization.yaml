@@ -13,4 +13,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/href
-        value: 'https://central-stackrox.apps.mays-demo.sandbox5445.opentlc.com'
+        value: 'https://central-stackrox.apps.mays-demo.sandbox5623.opentlc.com'
