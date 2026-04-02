@@ -6,4 +6,4 @@ patches:
       group: machine.openshift.io
       version: v1beta1
       kind: MachineSet
-    path: patch-zone-a.yaml
+    path: patch-zone-b.yaml
