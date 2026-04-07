@@ -1,0 +1,8 @@
+commonAnnotations:
+  argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+
+resources:
+  - gpu-cluster-policy.yaml
+  - nvidia-dcgm-exporter-dashboard.yaml
+# This config can be used to enable GPU slicing
+#  - device-plugin-config.yaml

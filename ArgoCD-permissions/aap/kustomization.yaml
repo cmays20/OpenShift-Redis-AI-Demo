@@ -1,3 +1,0 @@
-resources:
-  - argocd-aap-role.yaml
-  - argocd-aap-rolebinding.yaml

@@ -1,3 +1,0 @@
-resources:
-  - argocd-developer-hub-role.yaml
-  - argocd-developer-hub-rolebinding.yaml
