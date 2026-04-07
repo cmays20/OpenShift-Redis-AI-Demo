@@ -10,7 +10,7 @@ spec:
   source:
     path: Operators/DevSpaces/aggregate
     repoURL: 'https://github.com/cmays20/OpenShift-Redis-AI-Demo.git'
-    targetRevision: HEAD
+    targetRevision: cluster2
   syncPolicy:
     automated:
       selfHeal: true
