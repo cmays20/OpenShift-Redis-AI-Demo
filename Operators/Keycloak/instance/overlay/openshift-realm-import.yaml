@@ -294,7 +294,7 @@ spec:
         clientAuthenticatorType: client-secret
         fullScopeAllowed: true
         redirectUris:
-          - 'https://oauth-openshift.apps.mays-demo.sandbox812.opentlc.com/oauth2callback/*'
+          - 'https://oauth-openshift.apps.mays-demo.sandbox3060.opentlc.com/oauth2callback/*'
         clientId: openshift
         optionalClientScopes:
           - address
@@ -314,7 +314,7 @@ spec:
         standardFlowEnabled: true
         protocol: openid-connect
         webOrigins:
-          - 'https://oauth-openshift.apps.mays-demo.sandbox812.opentlc.com'
+          - 'https://oauth-openshift.apps.mays-demo.sandbox3060.opentlc.com'
         directAccessGrantsEnabled: true
     enabled: true
     groups:

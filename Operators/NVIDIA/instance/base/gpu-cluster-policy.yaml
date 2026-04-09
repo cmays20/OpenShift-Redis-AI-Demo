@@ -9,7 +9,7 @@ spec:
     defaultRuntime: crio
     use_ocp_driver_toolkit: true
     initContainer: {}
-  sandbox812Workloads:
+  sandboxWorkloads:
     enabled: false
     defaultWorkload: container
   driver:
@@ -79,7 +79,7 @@ spec:
     enabled: false
   vgpuDeviceManager:
     enabled: true
-  sandbox812DevicePlugin:
+  sandboxDevicePlugin:
     enabled: true
   vfioManager:
     enabled: true
