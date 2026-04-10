@@ -8,8 +8,8 @@ metadata:
 spec:
   identifiers:
     - defaultCount: 1
-      displayName: gpu
-      identifier: gpu
+      displayName: nvidia.com/gpu
+      identifier: nvidia.com/gpu
       maxCount: 1
       minCount: 1
       resourceType: Accelerator
