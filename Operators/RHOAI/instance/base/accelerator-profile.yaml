@@ -27,7 +27,10 @@ spec:
       resourceType: Memory
   scheduling:
     node:
-      nodeSelector:
-        nvidia.com/gpu: 'true'
-      tolerations: []
+      nodeSelector: { }
+      tolerations:
+        - effect: NoSchedule
+          key: nvidia.com/gpu
+          operator: Equal
+          value: 'true'
     type: Node
