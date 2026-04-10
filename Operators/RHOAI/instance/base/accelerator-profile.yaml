@@ -1,17 +1,18 @@
-apiVersion: dashboard.opendatahub.io/v1
-kind: AcceleratorProfile
+apiVersion: dashboard.opendatahub.io/v1alpha1
+kind: HardwareProfile
 metadata:
   name: nvidia-gpu
   namespace: redhat-ods-applications
   annotations:
     argocd.argoproj.io/sync-wave: "3"
 spec:
-  description: ''
   displayName: nvidia-gpu
+  description: ""
   enabled: true
-  identifier: nvidia.com/gpu
-  tolerations:
-    - effect: NoSchedule
-      key: nvidia.com/gpu
-      operator: "Equal"
-      value: "true"
+  hardware:
+    - identifier: nvidia.com/gpu
+      tolerations:
+        - key: nvidia.com/gpu
+          operator: Equal
+          value: "true"
+          effect: NoSchedule
