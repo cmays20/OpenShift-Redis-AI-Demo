@@ -4,3 +4,4 @@ resources:
   - ../../keycloak
   - ../../nfd
   - ../../nvidia
+  - ../../rhoai
