@@ -4,6 +4,12 @@ metadata:
   name: oauth
   namespace: openshift-gitops
 spec:
+  ignoreDifferences:
+    - group: user.openshift.io
+      kind: Group
+      name: cluster-admins
+      jsonPointers:
+        - /users
   destination:
     server: 'https://kubernetes.default.svc'
   project: default
