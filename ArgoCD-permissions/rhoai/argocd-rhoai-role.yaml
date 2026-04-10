@@ -6,6 +6,6 @@ rules:
   - apiGroups: ["datasciencecluster.opendatahub.io"]
     resources: ["datascienceclusters"]
     verbs: ["*"]
-  - apiGroups: [ "dashboard.opendatahub.io" ]
-    resources: [ "acceleratorprofiles" ]
+  - apiGroups: [ "infrastructure.opendatahub.io" ]
+    resources: [ "hardwareprofiles" ]
     verbs: [ "*" ]
