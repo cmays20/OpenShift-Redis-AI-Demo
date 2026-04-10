@@ -30,10 +30,6 @@ spec:
           permitCodeExecution: deny
           permitOnline: deny
       managementState: Managed
-    aipipelines:
-      argoWorkflowsControllers:
-        managementState: Removed
-      managementState: Removed
     ray:
       managementState: Removed
     kueue:
@@ -43,12 +39,8 @@ spec:
     workbenches:
       managementState: Managed
       workbenchNamespace: rhods-notebooks
-    mlflowoperator:
-      managementState: Removed
     dashboard:
       managementState: Managed
-    trainer:
-      managementState: Removed
     llamastackoperator:
       managementState: Removed
     trainingoperator:
