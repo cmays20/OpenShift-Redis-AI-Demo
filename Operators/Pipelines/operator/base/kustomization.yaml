@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: openshift-operators
+
+resources:
+  - subscription.yaml
+  - enable-pipelines-console-plugin-sa.yaml
+  - enable-pipelines-console-plugin-rbac.yaml
+  - enable-pipelines-console-plugin.yaml
