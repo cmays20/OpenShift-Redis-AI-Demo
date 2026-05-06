@@ -5,3 +5,4 @@ resources:
   - ../../nfd
   - ../../nvidia
   - ../../rhoai
+  - ../../service-mesh

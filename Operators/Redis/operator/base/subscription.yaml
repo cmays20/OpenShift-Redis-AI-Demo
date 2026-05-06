@@ -1,0 +1,13 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  labels:
+    operators.coreos.com/redis-enterprise-operator-cert.rag: ''
+  name: redis-enterprise-operator-cert
+  namespace: rag
+spec:
+  channel: production
+  installPlanApproval: Automatic
+  name: redis-enterprise-operator-cert
+  source: certified-operators
+  sourceNamespace: openshift-marketplace

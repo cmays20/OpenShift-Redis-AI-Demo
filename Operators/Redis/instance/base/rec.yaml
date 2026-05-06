@@ -1,0 +1,38 @@
+apiVersion: app.redislabs.com/v1
+kind: RedisEnterpriseCluster
+metadata:
+  name: rec
+  namespace: rag
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
+spec:
+  serviceAccountName: rec
+  redisEnterpriseNodeResources:
+    limits:
+      cpu: '2'
+      memory: 4Gi
+    requests:
+      cpu: '2'
+      memory: 4Gi
+  clusterCredentialSecretName: rec
+  nodes: 3
+  persistentSpec:
+    enabled: true
+    storageClassName: ''
+    volumeSize: 20Gi
+  createServiceAccount: true
+  username: demo@redis.com
+  clusterCredentialSecretRole: ''
+  podStartingPolicy:
+    enabled: false
+    startingThresholdSeconds: 540
+  uiServiceType: ClusterIP
+  clusterCredentialSecretType: kubernetes
+  certificates:
+    cmCertificateSecretName: rec-ui-cert
+  servicesRiggerSpec:
+    databaseServiceType: 'cluster_ip,headless'
+    serviceNaming: bdb_name
+  services:
+    apiService:
+      type: ClusterIP

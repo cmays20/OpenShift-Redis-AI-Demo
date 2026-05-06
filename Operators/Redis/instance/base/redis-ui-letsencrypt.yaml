@@ -1,0 +1,22 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: redis-ui-letsencrypt
+  namespace: rag
+spec:
+  commonName: some-url
+  dnsNames:
+    - some-url
+  duration: 2160h0m0s
+  issuerRef:
+    kind: ClusterIssuer
+    name: acme-prod-issuer
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    rotationPolicy: Always
+    size: 2048
+  renewBefore: 720h0m0s
+  secretName: redis-ui-letsencrypt
+  additionalOutputFormats:
+    - CombinedPEM

@@ -1,0 +1,7 @@
+resources:
+  - rec.yaml
+  - redis-ui-letsencrypt.yaml
+  - redb-tls.yaml
+  - convert-cert-secret-job.yaml
+  - redb-tls-route.yaml
+  - rec-ui-route.yaml

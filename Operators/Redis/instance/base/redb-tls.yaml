@@ -1,0 +1,14 @@
+apiVersion: app.redislabs.com/v1alpha1
+kind: RedisEnterpriseDatabase
+metadata:
+  name: redb-tls
+  namespace: rag
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+spec:
+  databaseSecretName: redb-redb-tls
+  defaultUser: true
+  memorySize: 256MB
+  replication: true
+  shardCount: 1
+  tlsMode: enabled
